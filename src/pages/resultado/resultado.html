@@ -1,0 +1,61 @@
+<!--
+  Generated template for the ResultadoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent>
+    <ion-title>Resultado</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-title>Diâmetro dos Pneus</ion-title>
+    <ion-row>
+      <ion-col >
+        <ion-card>
+          <ion-label>Pneu Original: </ion-label>
+          <p style="color:darkgrey">{{diametroA| number:"1.2-2"}} mm</p>
+        </ion-card>
+
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-label>Pneu Desejado: </ion-label>
+          <p style="color:darkgrey">{{diametroB| number:"1.2-2"}} mm</p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <br>
+
+    <ion-title>Comparação dos Pneus</ion-title>
+    <br>
+    <ion-row >
+      <ion-col>
+        <ion-card>
+          <ion-label> Diferença em % :</ion-label>
+          <p style="color:darkgrey"> {{diferenca_perc| number:"1.2-2"}} % </p>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-label>Diferença em mm :</ion-label>
+          <p style="color:darkgrey">{{diferenca_mm| number:"1.2-2"}} mm</p>
+        </ion-card>
+      </ion-col>
+
+      <ion-card>
+        <ion-label>Permitido :</ion-label>
+        <p *ngIf="resultadoBoolean" style="color:greenyellow"> {{resultado}} </p>
+        <p *ngIf="!resultadoBoolean" style="color:red"> {{resultado}} </p>
+
+      </ion-card>
+    </ion-row>
+  </ion-card>
+
+</ion-content>

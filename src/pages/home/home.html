@@ -1,0 +1,192 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+    <ion-title>
+      Calculadora de Conversão 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content    fullscreen>
+  <ion-card >
+  <ion-title>Tamanho do Pneu Original</ion-title>
+  <br>
+  <ion-item>
+    <ion-label >Largura</ion-label>
+    <ion-select  [(ngModel)]="inputLarguraA">
+      <ion-option value="110">110</ion-option>
+      <ion-option value="115">115</ion-option>
+      <ion-option value="125">125</ion-option>
+      <ion-option value="135">135</ion-option>
+      <ion-option value="145">145</ion-option>
+      <ion-option value="155">155</ion-option>
+      <ion-option value="165">165</ion-option>
+      <ion-option value="175">175</ion-option>
+      <ion-option value="185">185</ion-option>
+      <ion-option value="195">195</ion-option>
+      <ion-option value="205">205</ion-option>
+      <ion-option value="215">215</ion-option>
+      <ion-option value="225">225</ion-option>
+      <ion-option value="235">235</ion-option>
+      <ion-option value="245">245</ion-option>
+      <ion-option value="255">255</ion-option>
+      <ion-option value="265">265</ion-option>
+      <ion-option value="275">275</ion-option>
+      <ion-option value="285">285</ion-option>
+      <ion-option value="295">295</ion-option>
+      <ion-option value="305">305</ion-option>
+      <ion-option value="315">315</ion-option>
+      <ion-option value="325">325</ion-option>
+      <ion-option value="335">335</ion-option>
+      <ion-option value="345">345</ion-option>
+      <ion-option value="355">355</ion-option>
+      <ion-option value="365">365</ion-option>
+      <ion-option value="375">375</ion-option>
+      <ion-option value="385">385</ion-option>
+      <ion-option value="395">395</ion-option>
+      <ion-option value="27">27</ion-option>
+      <ion-option value="30">30</ion-option>
+      <ion-option value="31">31</ion-option>
+      <ion-option value="32">32</ion-option>
+      <ion-option value="33">33</ion-option>
+      <ion-option value="35">35</ion-option>
+      <ion-option value="37">37</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Altura</ion-label>
+    <ion-select [(ngModel)]="inputAlturaA">
+				<ion-option value="25">25</ion-option>
+				<ion-option value="30">30</ion-option>
+				<ion-option value="35">35</ion-option>
+				<ion-option value="40">40</ion-option>
+				<ion-option value="45">45</ion-option>
+				<ion-option value="50">50</ion-option>
+				<ion-option value="55">55</ion-option>
+				<ion-option value="60">60</ion-option>
+				<ion-option value="65">65</ion-option>
+				<ion-option value="70">70</ion-option>
+				<ion-option value="75">75</ion-option>
+				<ion-option value="80">80</ion-option>
+				<ion-option value="85">85</ion-option>
+				<ion-option value="90">90</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Aro</ion-label>
+    <ion-select [(ngModel)]="inputAroA">
+        <ion-option value="12">12</ion-option>
+				<ion-option value="13">13</ion-option>
+				<ion-option value="14">14</ion-option>
+				<ion-option value="15">15</ion-option>
+				<ion-option value="16">16</ion-option>
+				<ion-option value="17">17</ion-option>
+				<ion-option value="18">18</ion-option>
+				<ion-option value="19">19</ion-option>
+				<ion-option value="20">20</ion-option>
+				<ion-option value="21">21</ion-option>
+				<ion-option value="22">22</ion-option>
+				<ion-option value="23">23</ion-option>
+				<ion-option value="24">24</ion-option>
+				<ion-option value="25">25</ion-option>
+				<ion-option value="26">26</ion-option>
+				<ion-option value="27">27</ion-option>
+				<ion-option value="28">28</ion-option>
+    </ion-select>
+  </ion-item>
+  <br>
+  </ion-card>
+  <ion-card transparent>
+      <ion-title>Tamanho do Pneu Desejado</ion-title>
+      <br>
+      <ion-item>
+        <ion-label>Largura</ion-label>
+        <ion-select [(ngModel)]="inputLarguraB">
+          <ion-option value="110">110</ion-option>
+          <ion-option value="115">115</ion-option>
+          <ion-option value="125">125</ion-option>
+          <ion-option value="135">135</ion-option>
+          <ion-option value="145">145</ion-option>
+          <ion-option value="155">155</ion-option>
+          <ion-option value="165">165</ion-option>
+          <ion-option value="175">175</ion-option>
+          <ion-option value="185">185</ion-option>
+          <ion-option value="195">195</ion-option>
+          <ion-option value="205">205</ion-option>
+          <ion-option value="215">215</ion-option>
+          <ion-option value="225">225</ion-option>
+          <ion-option value="235">235</ion-option>
+          <ion-option value="245">245</ion-option>
+          <ion-option value="255">255</ion-option>
+          <ion-option value="265">265</ion-option>
+          <ion-option value="275">275</ion-option>
+          <ion-option value="285">285</ion-option>
+          <ion-option value="295">295</ion-option>
+          <ion-option value="305">305</ion-option>
+          <ion-option value="315">315</ion-option>
+          <ion-option value="325">325</ion-option>
+          <ion-option value="335">335</ion-option>
+          <ion-option value="345">345</ion-option>
+          <ion-option value="355">355</ion-option>
+          <ion-option value="365">365</ion-option>
+          <ion-option value="375">375</ion-option>
+          <ion-option value="385">385</ion-option>
+          <ion-option value="395">395</ion-option>
+          <ion-option value="27">27</ion-option>
+          <ion-option value="30">30</ion-option>
+          <ion-option value="31">31</ion-option>
+          <ion-option value="32">32</ion-option>
+          <ion-option value="33">33</ion-option>
+          <ion-option value="35">35</ion-option>
+          <ion-option value="37">37</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Altura</ion-label>
+        <ion-select [(ngModel)]="inputAlturaB">
+            <ion-option value="25">25</ion-option>
+            <ion-option value="30">30</ion-option>
+            <ion-option value="35">35</ion-option>
+            <ion-option value="40">40</ion-option>
+            <ion-option value="45">45</ion-option>
+            <ion-option value="50">50</ion-option>
+            <ion-option value="55">55</ion-option>
+            <ion-option value="60">60</ion-option>
+            <ion-option value="65">65</ion-option>
+            <ion-option value="70">70</ion-option>
+            <ion-option value="75">75</ion-option>
+            <ion-option value="80">80</ion-option>
+            <ion-option value="85">85</ion-option>
+            <ion-option value="90">90</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Aro</ion-label>
+        <ion-select [(ngModel)]="inputAroB" aria-required="Deve ser preenchido">
+            <ion-option value="12">12</ion-option>
+            <ion-option value="13">13</ion-option>
+            <ion-option value="14">14</ion-option>
+            <ion-option value="15">15</ion-option>
+            <ion-option value="16">16</ion-option>
+            <ion-option value="17">17</ion-option>
+            <ion-option value="18">18</ion-option>
+            <ion-option value="19">19</ion-option>
+            <ion-option value="20">20</ion-option>
+            <ion-option value="21">21</ion-option>
+            <ion-option value="22">22</ion-option>
+            <ion-option value="23">23</ion-option>
+            <ion-option value="24">24</ion-option>
+            <ion-option value="25">25</ion-option>
+            <ion-option value="26">26</ion-option>
+            <ion-option value="27">27</ion-option>
+            <ion-option value="28">28</ion-option>
+        </ion-select>
+      </ion-item>
+      <br>
+  </ion-card>
+  <br>
+
+  <button class="button" ion-button block round (click)="calcularDiferencas()" >Calcular os Diâmetros</button>
+  <button class="button" ion-button block round (click)="limparCampos()" >Limpar Campos</button>
+ 
+
+</ion-content>

@@ -1,0 +1,68 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+ion-content {
+    background: url("../assets/imgs/backgroud.jpg");
+    //background-image: url('http://4.bp.blogspot.com/-VqGq-4SUxQ8/VpPPO0pKKaI/AAAAAAAADzw/PnniKCE1NMg/s1600/6583be0256301dc60f0fa348b6b8e49f.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+  }
+  .row{   
+      background: transparent;  
+      text-align: center;
+      font-size: larger;
+  }
+
+  .col{
+     background: transparent;
+      text-align: center;
+      font-size: medium;
+  }
+  .card{
+      background: transparent;
+      .card{
+          background:transparentize($color: #000000, $amount: 0.3);
+          color: white;
+      }
+  }
+
+.item{
+    background: transparentize($color: #000000, $amount: 0.5);
+    .label{
+        color: white;
+    }
+}
+
+ion-select{
+    background: transparent;
+    color:white;
+   
+}
+
+ion-option{
+    background: transparent;
+}
+ion-select{
+    background: transparent;
+}
+  ion-title{
+      text-align: center;    
+  }
+
+  ion-label{
+      background: transparent;
+  }
