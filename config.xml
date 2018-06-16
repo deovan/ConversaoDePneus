@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.conversao.de.pneu.android" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.conversao.de.pneu.android" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>ConversaoDePneus</name>
     <description>App para conversão de pneus</description>
     <author email="dedezanol9@gmail.com" href="">Deovan Zanol</author>
@@ -82,5 +82,6 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="cordova-plugin-admob-free" spec="^0.17.1" />
     <engine name="android" spec="~7.0.0" />
 </widget>
