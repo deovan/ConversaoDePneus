@@ -31,7 +31,8 @@ export class HomePage {
     let bannerConfig: AdMobFreeBannerConfig = {
       id: 'ca-app-pub-9146010147596764/2069660183',
       isTesting: false,
-      autoShow: true
+      autoShow: true,
+      bannerAtTop:true
     };
 
     this.admob.banner.config(bannerConfig);
